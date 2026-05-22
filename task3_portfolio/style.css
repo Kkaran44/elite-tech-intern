@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background: #f4f4f4;
+}
+
+/* Navbar */
+
+nav{
+    background: #222;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 40px;
+
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover{
+    color: cyan;
+}
+
+/* Sections */
+
+section{
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.home{
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: white;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home h2{
+    font-size: 50px;
+}
+
+.home p{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+/* About */
+
+.about{
+    background: white;
+}
+
+/* Projects */
+
+.projects{
+    background: #e8f0ff;
+}
+
+.project-card{
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+
+    width: 300px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Contact */
+
+.contact{
+    background: #222;
+    color: white;
+}
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul{
+        margin-top: 10px;
+    }
+
+    .home h2{
+        font-size: 35px;
+    }
+}
